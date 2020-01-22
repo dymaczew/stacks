@@ -1,0 +1,19 @@
+apiVersion: v2
+stacks:
+- id: fs20-nodejs-express
+  name: Node.js Express with Appmetrics
+  version: 0.1.0
+  description: Express web framework for Node.js instrumented with appmetrics data collector
+  license: Apache-2.0
+  language: nodejs
+  maintainers:
+  - name: Wlodek Dymaczewski
+    email: dymaczewski@pl.ibm.com
+    github-id: dymaczew
+  default-template: simple
+  templates:
+  - id: simple
+    url: https://raw.githubusercontent.com/dymaczew/stacks/master/incubator/fs20-nodejs-express.v0.1.0.templates.simple.tar.gz
+  requirements:
+    docker-version: '>= 17.09.0'
+    appsody-version: '>= 0.2.7'
