@@ -5,5 +5,8 @@ removed scaffold subdirectory from fs20-nodejs-express/templates
 created incubator subdirectory
 Moved index.yaml and template file from dev.local to incubator. Modified the contant of index.yaml to specify the github URL and renamed it to fs20-index.yaml
 Pushed content to github 
+Pushed image to dockerhub
+`docker push dymaczew/fs20-nodejs-express:0.1`
+
 
 
