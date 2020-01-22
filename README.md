@@ -2,6 +2,11 @@
 
 Stack based on Node.js Express Stack from incubator repo (Credits to Sam Roberts, vieuxtech@gmail.com)
 
+There are two changes to the nodejs-express stack:
+
+- ```require('appmetrics');``` line is added on top of the `server.js`
+- ```    "appmetrics": "*",``` line is added to dependencies section in `package.json` file
+
 The Node.js Express stack extends the [Node.js stack](../nodejs/README.md) and provides a consistent way of developing web applications using [Express](https://expressjs.com). Express is a fast, minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
 This stack is based on `Node.js v12` and `Express v4.17.x` and enables health checking and application metrics out of the box. The stack also provides a set of tests written using the [Mocha](https://mochajs.org) test framework, while the application metadata is provided via a `package.json` file.
