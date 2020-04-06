@@ -9,5 +9,5 @@ maintainers:
     github-id: dymaczew
 default-template: simple
 requirements:
-  docker-version: ">= 17.09.0"
+  docker-version: ">= 13.01.0"
   appsody-version: ">= 0.2.7"
