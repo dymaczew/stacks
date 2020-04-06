@@ -15,5 +15,6 @@ stacks:
   - id: simple
     url: https://raw.githubusercontent.com/dymaczew/stacks/master/incubator/fs20-nodejs-express.v0.1.0.templates.simple.tar.gz
   requirements:
-    docker-version: '>= 17.09.0'
+    docker-version: '>= 13.01.0'
     appsody-version: '>= 0.2.7'
+  image: docker.io/dymaczew/fs20-nodejs-express:0.1.0
