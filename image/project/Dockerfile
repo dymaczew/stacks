@@ -28,11 +28,12 @@ RUN apt-get update \
  && echo 'Finished installing dependencies'
 
 # Copy the project
-COPY --chown=node:node . /project
+COPY . /project
+COPY --from=0 /project/node_modules /project/node_modules
+COPY --from=0 /project/user-app/node_modules /project/user-app/node_modules
+RUN chown -R node:node /project
 
 # Copy all dependencies
-COPY --chown=node:node --from=0 /project/node_modules /project/node_modules
-COPY --chown=node:node --from=0 /project/user-app/node_modules /project/user-app/node_modules
 
 WORKDIR /project
 
